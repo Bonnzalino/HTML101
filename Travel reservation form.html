@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel reservation form</title>
+</head>
+<body>
+        <h1>Travel reservation form</h1>
+        <h2>*denotes mandatory</h2>
+        <label>Full name*:</label>
+            <br>
+        <input type="text" name="fullName" placeholder="FirstName LastName" required>
+            <br>
+        <label>Email address*:</label>
+            <br>
+        <input type="email" name="email" placeholder="Email_Address" required>
+            <br>
+        <label>Select Tour Package*:</label>
+            <br>
+            <select id="package" name="package">
+                <option value="Gold">Gold</option>
+                <option value="Silver">Silver</option>
+                <option value="Bronze">Bronze</option>
+            </select>
+            <div>
+        <label>Arrival date*:</label>
+            <br>
+        <input type="date" name="arrival" required>
+            </div>
+            <div>
+        <label>Number of persons*:</label>
+            <br>
+        <input type="number" name="number" min="1" max="12" step="1" placeholder="12">
+            </div>
+            <div>
+            What would you want to avail?*:
+            <br>
+        <label for="boarding">Boarding</label>
+        <input type="checkbox" value="boarding">
+        <br>
+        <label for="fooding">Fooding</label>
+        <input type="checkbox" value="Fooding">
+        <br>
+        <label for="seeing">Sight seeing</label>
+        <input type="checkbox" value="seeing">
+        </div>
+        <label>Discount Coupon code:</label>
+        <br>
+        <input type="text" name="code" placeholder="Enter here" required>
+        <div>
+            Terms and conditions*
+        <br>
+        <input type="radio" name="agree"> <label>I agree</label>
+        <input type="radio" name="agree"> <label>I disagree</label>
+        </div>
+        <section class="Complete">
+            <input type="submit" value="Complete reservation">
+        </section>
+    </form>
+</body>
+</html>
